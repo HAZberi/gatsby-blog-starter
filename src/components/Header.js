@@ -24,7 +24,7 @@ const Header = () => {
         display: "inline-flex",
       }}
     >
-      <style jsx global>{`
+      <style jsx="true" global="true">{`
         body {
           margin: 0px;
           padding: 0px;
