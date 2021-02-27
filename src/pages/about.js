@@ -1,12 +1,14 @@
 import React from "react"
 import { Link } from "gatsby"
 import Footer from "../components/Footer.js"
+import Header from "../components/Header.js";
 
 const AboutPage = () => {
   return (
     <div
       style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
     >
+      <Header />
       <h1>About</h1>
       <p style={{ maxWidth: "45em" }}>
         Whether it be person, business to consumer, or an individual to their

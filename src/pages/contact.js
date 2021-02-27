@@ -1,9 +1,11 @@
 import React from "react";
 import Footer from "../components/Footer.js"
+import Header from "../components/Header.js";
 
 const ContactPage = () => {
   return (
     <div>
+      <Header />
       <div
         style={{
           display: "flex",
