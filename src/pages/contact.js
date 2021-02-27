@@ -1,6 +1,6 @@
-import React from "react";
+import React from "react"
 import Footer from "../components/Footer.js"
-import Header from "../components/Header.js";
+import Header from "../components/Header.js"
 
 const ContactPage = () => {
   return (
@@ -43,7 +43,12 @@ const ContactPage = () => {
         </p>
         <p>
           Follow me on
-          <a href="https://twitter.com/" style={{ textDecoration: "none" }} target="_blank">
+          <a
+            href="https://twitter.com/"
+            style={{ textDecoration: "none" }}
+            target="_blank"
+            rel="noreferrer"
+          >
             {" "}
             Twitter
           </a>

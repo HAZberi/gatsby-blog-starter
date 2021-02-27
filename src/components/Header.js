@@ -16,11 +16,12 @@ const defaultLinks = {
 
 const Header = () => {
   return (
-    <div
+    <header
       style={{
         width: "100%",
         height: "5em",
         backgroundColor: "palegreen",
+        display: "inline-flex",
       }}
     >
       <style jsx global>{`
@@ -29,15 +30,18 @@ const Header = () => {
           padding: 0px;
         }
       `}</style>
+      <div>
+        <h1 style={{ margin: 0, display: "inline-flex", padding: "20px" }}>
+          HZ
+        </h1>
+      </div>
       <div
         style={{
           display: "flex",
           justifyContent: "space-around",
           alignItems: "center",
-          height: "5em",
-          maxWidth: "50em",
+          width: "50em",
           margin: "auto",
-          
         }}
       >
         <Link to="/" style={defaultLinks} activeStyle={activeLinks}>
@@ -53,7 +57,7 @@ const Header = () => {
           Contact Me
         </Link>
       </div>
-    </div>
+    </header>
   )
 }
 
