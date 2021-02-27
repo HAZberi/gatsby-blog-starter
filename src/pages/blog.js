@@ -1,18 +1,19 @@
-import React from "react";
-import Footer from "../components/Footer.js"
-import Header from "../components/Header.js";
+import React from "react"
+import Layout from "../components/Layout.js"
 
 const BlogPage = () => {
-    return (
-        <>
-            <Header />
-            <div style={{display: "flex", justifyContent: "center"}}>
-                <h1>Blog</h1>
-            </div>
-            <p style={{display: "flex", justifyContent: "center"}}>All the blog posts will appear here.</p>
-            <Footer />
-        </>
-    )
+  return (
+    <>
+      <Layout>
+        <div style={{ display: "flex", justifyContent: "center" }}>
+          <h1>Blog</h1>
+        </div>
+        <p style={{ display: "flex", justifyContent: "center" }}>
+          All the blog posts will appear here.
+        </p>
+      </Layout>
+    </>
+  )
 }
 
-export default BlogPage;
+export default BlogPage
