@@ -1,4 +1,5 @@
-import React from "react"
+import React from "react";
+import { Link } from "gatsby";
 
 const AboutPage = () => {
   return (
@@ -13,6 +14,7 @@ const AboutPage = () => {
         fast, modern inexpensive and aesthetic software to the Prairies and
         beyond.
       </p>
+      <p><Link to="/contact" style={{textDecoration: "none"}}>Interested in working with me.</Link></p>
     </div>
   )
 }

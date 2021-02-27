@@ -20,28 +20,31 @@ const ContactPage = () => {
           alignItems: "center",
         }}
       >
-        <div>
-          <p>
-            Phone:{" "}
-            <a
-              href="tel:5555555555"
-              style={{ textDecoration: "none", color: "inherit" }}
-            >
-              (555) 555-5555
-            </a>
-          </p>
-        </div>
-        <div>
-          <p>
-            Email:{" "}
-            <a
-              href="mailto:hassaan.zuberi@ucalgary.ca"
-              style={{ textDecoration: "none", color: "inherit" }}
-            >
-              hassaan.zuberi@ucalgary.ca
-            </a>
-          </p>
-        </div>
+        <p>
+          Phone:{" "}
+          <a
+            href="tel:5555555555"
+            style={{ textDecoration: "none", color: "inherit" }}
+          >
+            (555) 555-5555
+          </a>
+        </p>
+        <p>
+          Email:{" "}
+          <a
+            href="mailto:hassaan.zuberi@ucalgary.ca"
+            style={{ textDecoration: "none", color: "inherit" }}
+          >
+            hassaan.zuberi@ucalgary.ca
+          </a>
+        </p>
+        <p>
+          Follow me on
+          <a href="https://twitter.com/" style={{ textDecoration: "none" }} target="_blank">
+            {" "}
+            Twitter
+          </a>
+        </p>
       </div>
     </div>
   )
