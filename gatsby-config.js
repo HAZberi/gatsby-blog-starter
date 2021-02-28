@@ -6,6 +6,13 @@
 
 module.exports = {
   /* Your site config here */
+  siteMetadata: {
+    title: "Hassaan's Portfolio",
+    author: "Hassaan Zuberi",
+    initials: "HZ",
+    email: "hassaan.zuberi@ucalgary.ca",
+    phone: "(587) 555-5555"
+  },
   plugins: [
     {
       resolve: `gatsby-plugin-sass`,

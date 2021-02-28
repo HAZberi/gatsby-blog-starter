@@ -1,8 +1,17 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, graphql, useStaticQuery } from "gatsby"
 import headerLinks from "./header.module.scss"
 
 const Header = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          initials
+        }
+      }
+    }
+  `);
   return (
     <header
       style={{
@@ -20,7 +29,9 @@ const Header = () => {
       `}</style>
       <div>
         <h1 style={{ margin: 0, display: "inline-flex", padding: "15px" }}>
-          <Link to="/" className={headerLinks.defaultLinks}>HZ</Link>
+          <Link to="/" className={headerLinks.defaultLinks}>
+            {data.site.siteMetadata.initials}
+          </Link>
         </h1>
       </div>
       <div

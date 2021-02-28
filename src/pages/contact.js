@@ -1,7 +1,18 @@
 import React from "react"
 import Layout from "../components/Layout.js"
+import { graphql, useStaticQuery } from "gatsby"
 
 const ContactPage = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          email
+          phone
+        }
+      }
+    }
+  `)
   return (
     <div>
       <Layout>
@@ -28,7 +39,7 @@ const ContactPage = () => {
               href="tel:5555555555"
               style={{ textDecoration: "none", color: "inherit" }}
             >
-              (555) 555-5555
+              {data.site.siteMetadata.phone}
             </a>
           </p>
           <p>
@@ -37,7 +48,7 @@ const ContactPage = () => {
               href="mailto:hassaan.zuberi@ucalgary.ca"
               style={{ textDecoration: "none", color: "inherit" }}
             >
-              hassaan.zuberi@ucalgary.ca
+              {data.site.siteMetadata.email}
             </a>
           </p>
           <p>
