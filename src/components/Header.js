@@ -19,8 +19,8 @@ const Header = () => {
         }
       `}</style>
       <div>
-        <h1 style={{ margin: 0, display: "inline-flex", padding: "20px" }}>
-          HZ
+        <h1 style={{ margin: 0, display: "inline-flex", padding: "15px" }}>
+          <Link to="/" className={headerLinks.defaultLinks}>HZ</Link>
         </h1>
       </div>
       <div
