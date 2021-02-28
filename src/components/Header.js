@@ -1,18 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-
-const activeLinks = {
-  textDecoration: "none",
-  backgroundColor: "#ffffff",
-  color: "#000000",
-  padding: "5px",
-}
-
-const defaultLinks = {
-  textDecoration: "none",
-  color: "black",
-  padding: "5px",
-}
+import headerLinks from "./header.module.scss"
 
 const Header = () => {
   return (
@@ -20,7 +8,7 @@ const Header = () => {
       style={{
         width: "100%",
         height: "5em",
-        backgroundColor: "palegreen",
+        backgroundColor: "#a2c2cf",
         display: "inline-flex",
       }}
     >
@@ -44,16 +32,32 @@ const Header = () => {
           margin: "auto",
         }}
       >
-        <Link to="/" style={defaultLinks} activeStyle={activeLinks}>
+        <Link
+          to="/"
+          className={headerLinks.defaultLinks}
+          activeClassName={headerLinks.activeLinks}
+        >
           Home
         </Link>
-        <Link to="/blog" style={defaultLinks} activeStyle={activeLinks}>
+        <Link
+          to="/blog"
+          className={headerLinks.defaultLinks}
+          activeClassName={headerLinks.activeLinks}
+        >
           Blog
         </Link>
-        <Link to="/about" style={defaultLinks} activeStyle={activeLinks}>
+        <Link
+          to="/about"
+          className={headerLinks.defaultLinks}
+          activeClassName={headerLinks.activeLinks}
+        >
           About Me
         </Link>
-        <Link to="/contact" style={defaultLinks} activeStyle={activeLinks}>
+        <Link
+          to="/contact"
+          className={headerLinks.defaultLinks}
+          activeClassName={headerLinks.activeLinks}
+        >
           Contact Me
         </Link>
       </div>
