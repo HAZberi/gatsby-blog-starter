@@ -4,15 +4,23 @@ import Layout from "../components/Layout.js"
 
 const HomePage = () => {
   return (
-    <div style={{ textAlign: "center" }}>
+    <div>
       <Layout>
-        <h1>Home</h1>
-        <p>This page will contain the usual elements that Home Pages have!!</p>
-        <h5>
-          <Link to="/contact" style={{ textDecoration: "none" }}>
-            Need a Developer
-          </Link>
-        </h5>
+        <div style={{ display: "flex", justifyContent: "center" }}>
+          <h1>Home</h1>
+        </div>
+        <div style={{ display: "flex", justifyContent: "center" }}>
+          <p>
+            This page will contain the usual elements that Home Pages have!!
+          </p>
+        </div>
+        <div style={{ display: "flex", justifyContent: "center" }}>
+          <h5>
+            <Link to="/contact" style={{ textDecoration: "none" }}>
+              Need a Developer
+            </Link>
+          </h5>
+        </div>
       </Layout>
     </div>
   )
