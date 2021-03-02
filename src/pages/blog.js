@@ -1,13 +1,7 @@
 import React from "react"
 import Layout from "../components/Layout.js"
 import { graphql, useStaticQuery, Link } from "gatsby"
-
-const styles = {
-  defaultLink: {
-    textDecoration: "none",
-    color: "#402f1c",
-  },
-}
+import styles from "../styles/blog.module.scss"
 
 const BlogPage = () => {
   const {
@@ -36,21 +30,17 @@ const BlogPage = () => {
         <div style={{ display: "flex", justifyContent: "center" }}>
           <h1>Blog</h1>
         </div>
-        <div style={{ display: "flex", justifyContent: "center" }}>
-          <ol>
+        <div style={{ marginTop: "1em", maxWidth: "100%", display: "flex", justifyContent: "center" }}>
+          <ol className={styles.posts}>
             {posts.map((post, i) => {
               return (
-                <li key={i} style={{ maxWidth: "40em", marginBottom: "3em" }}>
-                  <h2>
-                    <Link
-                      to={`/blog/${post.node.fields.slug}`}
-                      style={styles.defaultLink}
-                    >
-                      {post.node.frontmatter.title}
-                    </Link>
-                  </h2>
-                  <p>Published On: {post.node.frontmatter.date}</p>
-                  <p>{post.node.excerpt}</p>
+                <li key={i} className={styles.post}>
+                  <Link
+                    to={`/blog/${post.node.fields.slug}`}
+                  >
+                    <h2>{post.node.frontmatter.title}</h2>
+                    <p>Published On: {post.node.frontmatter.date}</p>
+                  </Link>
                 </li>
               )
             })}
