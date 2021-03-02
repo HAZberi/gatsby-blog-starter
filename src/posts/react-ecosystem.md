@@ -3,9 +3,9 @@ title: "React Ecosystem"
 date: "2020-06-06"
 ---
 
-# What the hell is React?
+## What the hell is React?
 
-## Topics Covered
+### Topics Covered
 
 - Explore what is React?
 - Why Facebook built React?
