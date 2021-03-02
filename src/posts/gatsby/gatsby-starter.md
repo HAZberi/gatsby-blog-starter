@@ -1,11 +1,12 @@
 ---
 title: "Hello to the World of Great Gatsby"
-date: "2021-03-01"
+date: "March 1st, 2021"
 ---
 
 ## Welcome to the Gatsby World
 
 ![A Girl Sitting infront of Gatsby Development Environment](./gatsby.jpg)
+
 ### Topics Covered
 
 - Exploring the world of Gatsby

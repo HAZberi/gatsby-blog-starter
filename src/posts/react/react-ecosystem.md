@@ -1,6 +1,6 @@
 ---
 title: "React Ecosystem"
-date: "2020-06-06"
+date: "June 6th, 2020"
 ---
 
 ## What the hell is React?
