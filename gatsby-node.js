@@ -26,6 +26,13 @@ module.exports.createPages = async ({ graphql, actions }) => {
             }
           }
         }
+      },
+      allContentfulBlogPosts {
+          edges {
+              node {
+                  slug
+              }
+          }
       }
     }
   `)
@@ -35,6 +42,15 @@ module.exports.createPages = async ({ graphql, actions }) => {
       component: blogTemplatePath,
       context: {
         slug: node.fields.slug,
+      },
+    })
+  })
+  result.data.allContentfulBlogPosts.edges.forEach(({ node }) => {
+    createPage({
+      path: `/blog/${node.slug}`,
+      component: blogTemplatePath,
+      context: {
+        slug: node.slug,
       },
     })
   })
