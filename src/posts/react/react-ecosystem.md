@@ -5,6 +5,8 @@ date: "2020-06-06"
 
 ## What the hell is React?
 
+![snippet of JSX code](./react.jpg)
+
 ### Topics Covered
 
 - Explore what is React?

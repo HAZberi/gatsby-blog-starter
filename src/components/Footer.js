@@ -12,7 +12,7 @@ const Footer = () => {
     }
   `)
   return (
-    <footer style={{ display: "flex", justifyContent: "center" }}>
+    <footer style={{ display: "flex", justifyContent: "center", marginTop: "5em" }}>
       <p>Created By {data.site.siteMetadata.author} © {new Date().getFullYear()}</p>
     </footer>
   )

@@ -5,6 +5,7 @@ date: "2021-03-01"
 
 ## Welcome to the Gatsby World
 
+![A Girl Sitting infront of Gatsby Development Environment](./gatsby.jpg)
 ### Topics Covered
 
 - Exploring the world of Gatsby
