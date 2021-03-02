@@ -3,7 +3,6 @@ import { Link } from "gatsby"
 import Layout from "../components/Layout.js"
 
 const HomePage = () => {
-  console.log(process.env.GATSBY_GRAPHQL_IDE);
   return (
     <div>
       <Layout>

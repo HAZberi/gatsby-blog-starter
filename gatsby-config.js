@@ -6,7 +6,7 @@
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 })
- 
+
 module.exports = {
   /* Your site config here */
   siteMetadata: {
@@ -14,7 +14,7 @@ module.exports = {
     author: "Hassaan Zuberi",
     initials: "HZ",
     email: "hassaan.zuberi@ucalgary.ca",
-    phone: "(587) 555-5555"
+    phone: "(587) 555-5555",
   },
   plugins: [
     {
@@ -27,8 +27,9 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `src`,
-        path: `${__dirname}/src/`
-      }
-    }
+        path: `${__dirname}/src/`,
+      },
+    },
+    `gatsby-transformer-remark`,
   ],
 }
