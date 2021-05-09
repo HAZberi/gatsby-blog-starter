@@ -1,11 +1,13 @@
 import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/Layout.js"
+import Head from "../components/Head"
 
 const HomePage = () => {
   return (
     <div>
       <Layout>
+        <Head />
         <div style={{ display: "flex", justifyContent: "center" }}>
           <h1>Hello</h1>
         </div>
