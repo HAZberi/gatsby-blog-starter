@@ -10,7 +10,7 @@ require("dotenv").config({
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: "Hassaan's Portfolio",
+    title: "Hassaan's Blog",
     author: "Hassaan Zuberi",
     initials: "HZ",
     email: "hassaan.zuberi@ucalgary.ca",
