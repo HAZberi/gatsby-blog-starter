@@ -6,8 +6,8 @@ import Head from "../components/Head"
 const HomePage = () => {
   return (
     <div>
+      <Head pageTitle="Home" />
       <Layout>
-        <Head />
         <div style={{ display: "flex", justifyContent: "center" }}>
           <h1>Hello</h1>
         </div>

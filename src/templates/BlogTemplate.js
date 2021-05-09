@@ -4,6 +4,7 @@ import { graphql } from "gatsby"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import { BLOCKS } from "@contentful/rich-text-types"
 import { GatsbyImage } from "gatsby-plugin-image"
+import Head from "../components/Head"
 
 export const query = graphql`
   query($slug: String!) {
@@ -37,13 +38,18 @@ const BlogTemplate = props => {
   const generateContentJSX = () => {
     if (props.data.markdownRemark)
       return (
-        <div style={{ maxWidth: "50em", margin: "0 auto" }}>
-          <h1>{props.data.markdownRemark.frontmatter.title}</h1>
-          <p>Published On: {props.data.markdownRemark.frontmatter.date}</p>
-          <div
-            dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}
-          />
-        </div>
+        <>
+          <Head pageTitle={props.data.markdownRemark.frontmatter.title} />
+          <div style={{ maxWidth: "50em", margin: "0 auto" }}>
+            <h1>{props.data.markdownRemark.frontmatter.title}</h1>
+            <p>Published On: {props.data.markdownRemark.frontmatter.date}</p>
+            <div
+              dangerouslySetInnerHTML={{
+                __html: props.data.markdownRemark.html,
+              }}
+            />
+          </div>
+        </>
       )
     if (props.data.contentfulBlogPosts) {
       const bodyContent = JSON.parse(props.data.contentfulBlogPosts.body.raw)
@@ -79,13 +85,16 @@ const BlogTemplate = props => {
         },
       }
       return (
-        <div style={{ maxWidth: "50em", margin: "0 auto" }}>
-          <h1>{props.data.contentfulBlogPosts.title}</h1>
-          <p>Published On: {props.data.contentfulBlogPosts.publishedDate}</p>
-          <div style={{ display: "flex", flexDirection: "column" }}>
-            {documentToReactComponents(bodyContent, options)}
+        <>
+          <Head pageTitle={props.data.contentfulBlogPosts.title} />
+          <div style={{ maxWidth: "50em", margin: "0 auto" }}>
+            <h1>{props.data.contentfulBlogPosts.title}</h1>
+            <p>Published On: {props.data.contentfulBlogPosts.publishedDate}</p>
+            <div style={{ display: "flex", flexDirection: "column" }}>
+              {documentToReactComponents(bodyContent, options)}
+            </div>
           </div>
-        </div>
+        </>
       )
     }
   }

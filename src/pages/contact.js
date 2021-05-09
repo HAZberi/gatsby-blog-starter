@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/Layout.js"
 import { graphql, useStaticQuery } from "gatsby"
+import Head from "../components/Head"
 
 const ContactPage = () => {
   const data = useStaticQuery(graphql`
@@ -15,6 +16,7 @@ const ContactPage = () => {
   `)
   return (
     <div>
+      <Head pageTitle="Contact" />
       <Layout>
         <div
           style={{

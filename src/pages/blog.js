@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/Layout.js"
 import { graphql, useStaticQuery, Link } from "gatsby"
 import styles from "../styles/blog.module.scss"
+import Head from "../components/Head"
 
 const BlogPage = () => {
   /*   const {
@@ -56,6 +57,7 @@ const BlogPage = () => {
   `)
   return (
     <>
+      <Head pageTitle="Blog" />
       <Layout>
         <div style={{ display: "flex", justifyContent: "center" }}>
           <h1>Blog</h1>

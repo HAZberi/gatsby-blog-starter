@@ -1,10 +1,12 @@
 import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/Layout.js"
+import Head from "../components/Head"
 
 const AboutPage = () => {
   return (
     <>
+      <Head pageTitle="About" />
       <Layout>
         <div style={{ display: "flex", justifyContent: "center" }}>
           <h1>About</h1>
