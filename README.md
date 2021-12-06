@@ -5,7 +5,7 @@
   </a>
 </p>
 <h1 align="center">
-  Gatsby's Blog Website Template
+  Gatsby Blog Website Template
 </h1>
 
 Kick off your project with this minimilistic blog-webiste. 
