@@ -35,7 +35,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/HAZberi/gatsby-hello-world.git"
+    "url": "https://github.com/HAZberi/gatsby-blog-starter.git"
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
